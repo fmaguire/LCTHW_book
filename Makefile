@@ -6,7 +6,7 @@ PROGS=$(patsubst %.c,%,$(SRC))
 
 all: $(PROGS)
 
-%.ex: %.c
+%: %.c
 	$(CC) $(CFLAGS) -o $@ $<
 
 clean:
