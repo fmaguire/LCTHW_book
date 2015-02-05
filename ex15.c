@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
         printf("%s lived %d years so far.\n",
                 *cur_name, *cur_age);
     }
-
+    
     return 0;
 }
     
