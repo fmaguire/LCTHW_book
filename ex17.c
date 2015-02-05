@@ -7,6 +7,7 @@
 #define MAX_DATA 512
 #define MAX_ROWS 100
 
+// what does set do?
 struct Address {
     int id;
     int set;
@@ -14,14 +15,17 @@ struct Address {
     char email[MAX_DATA];
 };
 
+// database is an array of addresses
 struct Database {
     struct Address rows[MAX_ROWS];
 };
 
+// conn is file and database pointers
 struct Connection {
     FILE *file;
     struct Database *db;
 };
+
 
 void die(const char *message)
 {
