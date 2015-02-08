@@ -87,7 +87,7 @@ void test_sorting(int *numbers, int count, compare_cb cmp)
 
 int main(int argc, char *argv[])
 {
-    if(argc < 2) die("USAGE: ./ex18 4 3 1 5 6");
+    if(argc < 2) die("USAGE: ex18 4 3 1 5 6");
 
     int count = argc - 1;
     int i = 0;
